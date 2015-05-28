@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+<constant name="struts.devMode" value="true" />
+   <package name="loginapp" extends="struts-default">
+     
+      <action name="logon" 
+            class="com.tech_freaks.action.LogonAction" 
+            method="execute">
+            <result name="success">/Home.jsp</result>
+            <result name="input">/Login.jsp</result>
+            <result name="error">/Login.jsp</result>
+      </action>
+   </package>
+</struts>
